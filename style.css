@@ -1,0 +1,107 @@
+/* font-family: "Baloo 2", sans-serif; 
+   font-weight: 400-800 */
+/* font-family: "Oswald", sans-serif;
+   font-weight: 200-700; */
+
+/* reset, global styles */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+:root {
+  --font-primary: "Baloo 2", sans-serif;
+  --font-secondary: "Oswald", sans-serif;
+}
+body {
+  font-family: var(--font-primary);
+}
+a,
+input[type="submit"],
+button {
+  cursor: pointer;
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+button,
+input,
+textarea,
+optgroup,
+select,
+fieldset {
+  border: none;
+  background: none;
+  outline: none;
+  font-family: inherit;
+}
+/* -------------------------------------- */
+.section-1 {
+  width: 100vw;
+  height: 100vh;
+  background: url(./images/dark-bg.jpeg) center center/cover no-repeat;
+  position: relative;
+}
+.banner {
+  width: 100%;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+.banner__heading {
+  height: 20rem;
+  margin-bottom: 4rem;
+}
+.banner__heading span {
+  font-family: var(--font-secondary);
+  font-size: 12rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.5);
+}
+.heading-1 {
+}
+.heading-2 {
+}
+.heading-3 {
+}
+.heading-4 {
+}
+.banner__para {
+  font-size: 4rem;
+  font-weight: 400;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 30%;
+  margin: 0 auto 4rem auto;
+  padding: 1rem 0;
+  box-shadow: 1rem 1rem 5rem rgba(0, 0, 0, 0.5);
+}
+.banner__btn {
+  width: 30rem;
+  height: 6rem;
+  background: linear-gradient(to right, #9b0e0e, #7a1010);
+  color: #fff;
+  font-size: 2rem;
+  text-transform: uppercase;
+  border-radius: 3rem;
+  box-shadow: 1rem 1rem 3rem rgba(0, 0, 0, 0.5);
+  text-shadow: 0.6rem 0.3rem 0.2rem rgba(0, 0, 0, 0.4);
+}
