@@ -18,7 +18,9 @@ html {
 :root {
   --font-primary: "Baloo 2", sans-serif;
   --font-secondary: "Oswald", sans-serif;
-  --logo-links-font: "MADE Soulmaze", sans-serif;
+  --font-tertiary: "MADE Soulmaze", sans-serif;
+  --section-about-bg-color: #222020;
+  --section-pricing-bg-color: #03070e;
 }
 body {
   font-family: var(--font-primary);
@@ -56,6 +58,11 @@ fieldset {
   font-weight: 300;
   color: #ddd;
 }
+.section-heading__line {
+  width: 15rem;
+  height: 0.2rem;
+  background-color: #ddd;
+}
 /* -----------------Navbar--------------------- */
 .navbar {
   width: 100%;
@@ -78,7 +85,7 @@ fieldset {
   left: 4rem;
 }
 .navbar__logo a {
-  font-family: var(--logo-links-font);
+  font-family: var(--font-tertiary);
   font-size: 2.5rem;
   color: #eee;
   letter-spacing: 0.1rem;
@@ -109,7 +116,7 @@ fieldset {
   transition: all 0.7s 0.5s;
 }
 .navbar__link {
-  font-family: var(--logo-links-font);
+  font-family: var(--font-tertiary);
   font-size: 4rem;
   font-weight: bold;
   letter-spacing: 0.3rem;
@@ -284,7 +291,7 @@ fieldset {
 .section-2 {
   width: 100%;
   height: 100vh;
-  background-color: #222020;
+  background-color: var(--section-about-bg-color);
   color: #fff;
   display: flex;
   align-items: center;
@@ -292,11 +299,7 @@ fieldset {
   padding: 0 10rem;
   position: relative;
 }
-.section-2__line {
-  width: 15rem;
-  height: 0.2rem;
-  background-color: #ddd;
-}
+
 .section-2__video {
   width: 70rem;
   height: 40rem;
@@ -338,4 +341,93 @@ fieldset {
   align-self: flex-end;
 }
 
-/* -----------------Section 3--------------------- */
+/* ----------------Section 3 Pricing----------------- */
+.section-3 {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--section-pricing-bg-color);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding-left: 10rem;
+}
+.pricing-cards-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.pricing-card {
+  width: 28rem;
+  height: 45rem;
+  background-color: #181b1d;
+  border-radius: 1rem;
+  box-shadow: 2rem 2rem 6rem rgba(0, 0, 0, 0.7);
+  /* position: relative; */
+}
+.pricing-card__front {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.pricing-card__front-heading {
+  font-size: 2rem;
+  font-weight: 300;
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  padding-left: 2rem;
+}
+.heading-free {
+  background: linear-gradient(to right, #087285, #0da5d3);
+  border-radius: 1rem 1rem 0 0;
+}
+.heading-basic {
+  background: linear-gradient(to right, #946809, #bdba0e);
+  border-radius: 1rem 1rem 0 0;
+}
+.heading-standard {
+  background: linear-gradient(to right, #a10c14, #e23b3b);
+  border-radius: 1rem 1rem 0 0;
+}
+.heading-premium {
+  background: linear-gradient(to right, #0b7e48, #3be286);
+  border-radius: 1rem 1rem 0 0;
+}
+.pricing-card__front--price {
+  font-family: var(--font-tertiary);
+  font-size: 7rem;
+  font-weight: bold;
+}
+.pricing-card__front--list-free {
+}
+.pricing-card__front--list-basic {
+}
+.pricing-card__front--list-standard {
+}
+.pricing-card__front--list-premium {
+}
+.pricing-card--btn {
+}
+.btn-free {
+}
+.btn-basic {
+}
+.btn-standard {
+}
+.btn-premium {
+}
+.pricing-card__back {
+}
+.back-free {
+}
+.back-basic {
+}
+.back-standard {
+}
+.back-premium {
+}
