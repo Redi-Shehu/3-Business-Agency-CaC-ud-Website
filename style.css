@@ -49,6 +49,13 @@ fieldset {
   outline: none;
   font-family: inherit;
 }
+/* global classes */
+.section-heading {
+  font-family: var(--font-secondary);
+  font-size: 10rem;
+  font-weight: 300;
+  color: #ddd;
+}
 /* -----------------Navbar--------------------- */
 .navbar {
   width: 100%;
@@ -145,7 +152,7 @@ fieldset {
 .change.line-3 {
   transform: translateX(0.1rem) translateY(-0.5rem) rotate(-30deg);
 }
-/* -----------------Section 1--------------------- */
+/* -----------------Section 1 Home--------------------- */
 .section-1 {
   width: 100vw;
   height: 100vh;
@@ -273,3 +280,62 @@ fieldset {
 .banner__btn:hover::before {
   left: 100%;
 }
+/* -----------------Section 2 About------------------- */
+.section-2 {
+  width: 100%;
+  height: 100vh;
+  background-color: #222020;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 0 10rem;
+  position: relative;
+}
+.section-2__line {
+  width: 15rem;
+  height: 0.2rem;
+  background-color: #ddd;
+}
+.section-2__video {
+  width: 70rem;
+  height: 40rem;
+  position: absolute;
+  top: 5rem;
+  right: 15rem;
+  box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.7);
+}
+.section-2__video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.4;
+}
+.section-2__para {
+  width: 70rem;
+  font-size: 2rem;
+  color: #ddd;
+  position: absolute;
+  bottom: 5rem;
+  right: 15rem;
+  border-top: 0.3rem double #aaa;
+  border-bottom: 0.3rem double #aaa;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+  text-shadow: 1rem 1rem 3rem rgba(0, 0, 0, 0.7);
+  line-height: 1.2;
+}
+.section-2__para i {
+  font-size: 4rem;
+}
+.fa-quote-left {
+  align-self: flex-start;
+}
+.fa-quote-right {
+  align-self: flex-end;
+}
+
+/* -----------------Section 3--------------------- */
