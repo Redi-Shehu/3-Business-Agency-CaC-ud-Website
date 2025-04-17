@@ -21,6 +21,10 @@ html {
   --font-tertiary: "MADE Soulmaze", sans-serif;
   --section-about-bg-color: #222020;
   --section-pricing-bg-color: #03070e;
+  --card-free-txt-btn-color: #0da5d3;
+  --card-basic-txt-btn-color: #bdba0e;
+  --card-standard-txt-btn-color: #e23b3b;
+  --card-premium-txt-btn-color: #3be286;
 }
 body {
   font-family: var(--font-primary);
@@ -363,7 +367,7 @@ fieldset {
   background-color: #181b1d;
   border-radius: 1rem;
   box-shadow: 2rem 2rem 6rem rgba(0, 0, 0, 0.7);
-  /* position: relative; */
+  position: relative;
 }
 .pricing-card__front {
   width: 100%;
@@ -381,6 +385,15 @@ fieldset {
   display: flex;
   align-items: center;
   padding-left: 2rem;
+}
+.pricing-card__front i {
+  font-size: 1.8rem;
+  width: 3rem;
+}
+.pricing-card__front span {
+  font-size: 1.8rem;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
 }
 .heading-free {
   background: linear-gradient(to right, #087285, #0da5d3);
@@ -404,30 +417,84 @@ fieldset {
   font-weight: bold;
 }
 .pricing-card__front--list-free {
+  color: var(--card-free-txt-btn-color);
 }
 .pricing-card__front--list-basic {
+  color: var(--card-basic-txt-btn-color);
 }
 .pricing-card__front--list-standard {
+  color: var(--card-standard-txt-btn-color);
 }
 .pricing-card__front--list-premium {
+  color: var(--card-premium-txt-btn-color);
+}
+.pricing-card__front--list-free li,
+.pricing-card__front--list-basic li,
+.pricing-card__front--list-standard li,
+.pricing-card__front--list-premium li {
+  margin-bottom: 0.5rem;
 }
 .pricing-card--btn {
+  width: 18rem;
+  height: 5rem;
+  margin-bottom: 3rem;
+  border-radius: 3rem;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.5);
 }
 .btn-free {
+  background-color: var(--card-free-txt-btn-color);
 }
 .btn-basic {
+  background-color: var(--card-basic-txt-btn-color);
 }
 .btn-standard {
+  background-color: var(--card-standard-txt-btn-color);
 }
 .btn-premium {
+  background-color: var(--card-premium-txt-btn-color);
 }
 .pricing-card__back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotateY(180deg);
+}
+.pricing-card__back a {
+  font-size: 2.5rem;
+  color: #fff;
+}
+.pricing-card__front,
+.pricing-card__back {
+  transition: all 1s;
+}
+.pricing-card:hover .pricing-card__front {
+  transform: perspective(200rem) rotateY(-180deg);
+}
+.pricing-card:hover .pricing-card__back {
+  transform: perspective(200rem) rotateY(0);
 }
 .back-free {
+  background: linear-gradient(to right, #087285, #0da5d3);
 }
 .back-basic {
+  background: linear-gradient(to right, #946809, #bdba0e);
 }
 .back-standard {
+  background: linear-gradient(to right, #a10c14, #e23b3b);
 }
 .back-premium {
+  background: linear-gradient(to right, #0b7e48, #3be286);
 }
+
+/* ----------------Section 4 Contact----------------- */
